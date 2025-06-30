@@ -6,8 +6,8 @@ public class HarmoniousSubsequence {
     public static int findLHS(int[] nums) {
         HashMap<Integer, Integer> counts_map = new HashMap<>();
 
-        for (int i = 0; i < nums.length; i++) {
-            counts_map.put(nums[i], counts_map.getOrDefault(nums[i], 0) + 1);
+        for (int num : nums) {
+            counts_map.put(num, counts_map.getOrDefault(num, 0) + 1);
         }
 
         int longest = 0;
