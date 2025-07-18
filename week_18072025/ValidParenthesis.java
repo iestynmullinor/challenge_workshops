@@ -14,7 +14,7 @@ public class ValidParenthesis {
             if(current_char == '(' || current_char == '[' || current_char == '{')
                 stack.add(current_char);
 
-            else if (stack.size()==0)
+            else if (stack.isEmpty())
                 return false;
 
             else{
@@ -38,7 +38,7 @@ public class ValidParenthesis {
             }
         }
 
-        return (stack.size()==0);
+        return (stack.isEmpty());
 
 
     }
